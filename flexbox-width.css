@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: lightblue;
+}
+
+.sidebar {
+  flex-basis: 200px;
+  background-color: lightgreen;
+}
