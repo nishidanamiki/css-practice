@@ -15,3 +15,35 @@
   background-color: lightblue;
   border: 1px solid blue;
 }
+
+.holy-grail-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "nav main sidebar"
+    "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
+
+.holy-grail-container > * {
+  border: 1px solid #333;
+  padding: 10px;
+}
